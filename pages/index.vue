@@ -49,7 +49,7 @@
       <div class="name">Moon Kid Studios</div>
       <div class="email">hello@moonkidstudios.com</div>
     </footer>
-    
+
   </div>  
 </template>
 
@@ -114,6 +114,7 @@
     font-family: 'Minecraft', sans-serif;
     font-size: 1em;
     letter-spacing: .1em;
+    cursor: pointer;
     /* font-family: 'Pix-Riddim', sans-serif; */
   }
 
@@ -179,6 +180,7 @@
     letter-spacing: .2em;
     text-align: center;
     color: #fff;
+    cursor: pointer;
   }
   .align-center {
     text-align: center;
