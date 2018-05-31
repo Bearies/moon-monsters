@@ -1,0 +1,15 @@
+{
+  "name": "moon-monsters",
+  "version": "1.0.0",
+  "author": "Bearies",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bearies/moon-monsters.git"
+  },
+  "dependencies": {
+    "nuxt": "^1.4.0"
+  }
+}
