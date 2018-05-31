@@ -12,7 +12,7 @@
       <p class="paragraph">Each week, venture out into the unknown to discover new secrets, obtain hidden treasures, and defeat a new monster, allowing you to unlock unique items, experiences, and earn MINED tokens.</p>
     </div>
     <div class="video">
-      <iframe width="680" height="400" src="https://www.youtube.com/embed/6Gf_kRE4MJU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <!-- <iframe width="680" height="400" src="https://www.youtube.com/embed/6Gf_kRE4MJU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
     </div>
     <div class="white-paper">
       <button class="whitepaper-btn">READ THE WHITEPAPER</button>
