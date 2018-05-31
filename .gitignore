@@ -8,7 +8,7 @@ npm-debug.log
 .nuxt
 
 # Nuxt generate
-dist
+/dist
 
 # ds store (OS files)
 .DS_Store
