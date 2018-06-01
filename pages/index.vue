@@ -217,7 +217,7 @@
     width: 90%;
     max-width: 300px;
     background: #fe5b96;
-    border: none;
+    border: 1px solid #fe5b96;
     font-family: 'Minecraft', sans-serif;
     font-size: .8em;
     letter-spacing: .2em;
