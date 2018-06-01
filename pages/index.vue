@@ -3,30 +3,35 @@
 
     <div class="banner">
       <div class="page-logo">
-        <img class="bk-image" src="~/assets/bk_placeholder.png" alt="backgroung image">
-        <img class="logo-text" src="~/assets/logo_moonmonsters.png" alt="Moon Monsters">
+        <img class="bk-image" src="~/assets/images/space-bk.png" alt="backgroung image">
+        <img class="logo-text" src="~/assets/images/logo_moonkidstudios-2.png" alt="Moonkidstudios">
       </div>
     </div>
 
     <div class="desc">
-      <p class="paragraph">Imagine waking up, on a moon in the middle of spacetime you're surrounded by monsters, and have no memory of exactly how you got here.</p>
-      <p class="paragraph">Uncover the mystery and create your own story as a Moon Monster, an intelligent extra-planetary race. As you seek allies and family you build your skills and defenses to stand your ground and explore the new territories you find.</p>
-      <p class="paragraph">Each week, venture out into the unknown to discover new secrets, obtain hidden treasures, and defeat a new monster, allowing you to unlock unique items, experiences, and earn MINED tokens.</p>
+      <p class="paragraph">Moon Kid Studios is a creative Game Dev and Blockchain studio creating a suite of blockchain based games centered around an extraterrestrial world and its many moons. The games allow players to follow the story as it weaves through different interactive environments and collect and buy cryptocurrency and NFTs as they go.</p>
     </div>
 
-    <div class="video">
-      <!-- <iframe width="680" height="400" src="https://www.youtube.com/embed/6Gf_kRE4MJU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+    <div class="coming-soon">
+      <div class="text-row">
+        <div class="monster"><img class="monster-eggs" src="~/assets/images/eggs.png" alt="eggs"></div>
+        <div class="text">
+          <p>Humans have discovered a far outpost of alien life. Around the Planet Zeta there are in orbit dozens of moons. The moons are inhabited by what appear to us as animal-like life forms. A nest of abandoned eggs has been procured to begin a study. Join the ranks of pioneering Xeno Anthropologists searching for the truth. Are these beings truly intelligent? Can we befriend and teach them? What will be learn?</p>
+          <p>Raise a Moon Monster from egg to young adulthood and help record behavioral traits. Care for, Name, and build an environment you believe it will respond to. What do we have on our hands? What are the implications for the Human race?</p>
+          <button class="comingsoon-btn">COMING SOON!</button>
+        </div>
+      </div>
     </div>
 
     <div class="white-paper">
-      <button class="whitepaper-btn">READ THE WHITEPAPER</button>
-    </div>
-
-    <div class="collaboration">
-      <div class="title">in collaboration with</div>
-      <div class="logos-row">
-        <div class="logos-cell"><img src="~/assets/logo_dispatchlabs.png" alt="Dispatch Labs"></div>
-        <div class="logos-cell"><img src="~/assets/logo_playchemy.png" alt="Playchemy"></div>
+      <div class="text-row">
+        <div class="text">
+          <p>Imagine waking up, on a moon in the middle of spacetime. You’re surrounded by monsters, and have no memory of exactly how you got there.</p>
+          <p>Uncover the mystery and create your own story as a Moon Monster, an intelligent extra-planetary race. As you seek allies and family you build your skills and defenses to stand your ground and explore the new territories you find.</p>
+          <p>Each week, venture out into the unknown to discover new secrets, obtain hidden treasures, and defeat a new monster, allowing you to unlock unique items, experiences, and earn MINED tokens.</p>
+          <button class="whitepaper-btn">READ THE WHITEPAPER</button>
+        </div>
+        <div class="monster"><img class="monster-tail" src="~/assets/images/feature2_monster.png" alt="monster"></div>
       </div>
     </div>
 
@@ -46,103 +51,139 @@
     </div>
 
     <footer class="footer">
-      <div class="name">Moon Kid Studios</div>
       <div class="email">hello@moonkidstudios.com</div>
-    </footer>
+      <div class="name">Moon Kid Studios</div>
+    </footer> 
 
   </div>  
 </template>
 
 <style scoped>
   .moon-monsters {
-    background: #b3feff;
-    color: #212121;
+    background: linear-gradient(90deg, #101b27, #434e5d);
   }
 
   .banner {
     text-align: center;
-    height: 100vh;
     width: 100vw;
   }
-
   .page-logo {
     position: relative;
-    display: inline-block;
-    height: 100%;
+    width: 100%;
   }
   .bk-image {
-    height: 100%;
+    width: 100%;
   }
   .logo-text {
     position: absolute;
     top: 30%;
-    left: 10%;
-    width: 80%;
+    left: 27%;
+    width: 46%;
   }
-
   .desc {
-    margin: 0 auto;
-    padding: 60px 0;
-    width: 90%;
-    max-width: 780px;
-    text-align: center;
+    padding: 12% 0;
+    margin-top: -24%;
+    background-image: url('~/assets/images/largemoon.png');
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+    z-index: 10;
     font-family: 'Minecraft', sans-serif;
+    font-size: 2.4vw;
+    text-shadow: .1em .1em black;
+    letter-spacing: .1em;
   }
   .paragraph {
-    padding:  15px 0;
-    line-height: 2em;
-    letter-spacing: .1em;
-    color: #424242;
-  }
-  .paragraph:first-child {
     margin: 0 auto;
-    max-width: 520px;
+    width: 60%;
+    line-height: 1.7em;
   }
 
-  .video {
-    text-align: center;
+  .coming-soon {
+    background: #9798b6;
   }
-  
   .white-paper {
-    padding: 80px 0;
-    text-align: center;
+    background: #ffbac9;
   }
+
+  .text-row {
+    display: flex;
+    margin: 0 auto;
+    padding: 6% 24px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .monster {
+    flex: none;
+    width: 30%;
+  }
+  .coming-soon .monster {
+    width: 26%;
+  }
+  .text-row .text {
+    position: relative;
+    font-family: 'Minecraft', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.6em;
+    letter-spacing: .1em;
+    z-index: 2;
+  }
+  .white-paper .text {
+    color: #424242;
+  }
+
+  .coming-soon .text {
+    padding-left: 40px;
+  }
+
+  .text-row .text p {  
+    padding:  10px 0;
+  }  
+  .coming-soon .monster,
+  .white-paper .monster {
+    position: relative;
+  } 
+
+  .monster-eggs {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+  }
+
+  .monster-tail {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    transform: translate(-30%, -20%)scale(1.6);
+  }
+
+  .comingsoon-btn,
   .whitepaper-btn {
+    margin-top: 8%;
     padding: 1.2em 1.2em .8em;
-    background: #fff;
-    border: 1px solid #424242;
     font-family: 'Minecraft', sans-serif;
     font-size: 1em;
     letter-spacing: .1em;
     cursor: pointer;
-    /* font-family: 'Pix-Riddim', sans-serif; */
+  }
+  .comingsoon-btn {
+    background: #00f7ff;
+    border: 1px solid #0aa4aa;
+    color: #056569;
+  }
+  .whitepaper-btn {
+    background: #fcb0e3;
+    border: 1px solid #fe5b96;
+    color: #462047;
   }
 
-  .collaboration {
-    padding: 30px 0 40px;
-    text-align: center;
-  }
-  .collaboration .title {
-    font-family: 'Minecraft', sans-serif;
-    font-size: 1.1em;
-    letter-spacing: .1em;
-  }
-  .logos-row {
-    display: flex;
-    margin: 10px auto 0;
-    width: 100%;
-    max-width: 500px;
-  }
-  .logos-cell {
-    padding: 20px;
-  }
-  .logos-cell img {
-    width: 100%;
-  }
 
   .subscription {
     padding: 80px 24px;
-    background: #fff;
   }
   .subscription .title {
     margin: 0 auto;
@@ -152,6 +193,7 @@
     letter-spacing: .1em;
     text-align: center;
     line-height: 1.8em;
+    color: #fff;
   }
   .subscription .item {
     text-align: center;
@@ -174,7 +216,8 @@
     height: 50px;
     width: 90%;
     max-width: 300px;
-    background: #4452e8;
+    background: #fe5b96;
+    border: none;
     font-family: 'Minecraft', sans-serif;
     font-size: .8em;
     letter-spacing: .2em;
@@ -188,56 +231,21 @@
 
   .footer {
     padding: 20px;
-    background: #fff;
-    text-align: center;
+    font-family: 'Minecraft', sans-serif;
     font-size: .9em;
     letter-spacing: .1em;
+    text-align: center;
   }
   .footer .name,
   .footer .email {
-    font-family: sans-serif;
-    font-weight: 600;
-    color: #424242;
+    font-weight: 500;
+    color: #fff;
+  }
+  .footer .name {
+    margin-top: 1em;
+    font-size: .8em;
   }
   .footer .email {
-    margin-top: 6px;
-    color: #4452e8;
+    color: #fe5b96;
   }
-
-  @media (max-width: 767px) {
-    .moon-monsters {
-      padding-top: 10vh;
-      padding-bottom: 10vh;
-    }
-    .banner {
-      height: auto;
-    }
-    .bk-image {
-      width: 100%;
-    }
-  }
-
-/*   @media (min-width: 1440px) {
-    .bk-image {
-      max-width: 880px;
-    }
-    .page-logo img {
-      max-width: 880px;
-    }
-  } */
-    
-/* 
-  @media (max-width: 1023px) {
-    .page-logo {
-      width: 80%;
-    }
-  }
-
-  
-
-  @media (max-width: 425px) {
-    .page-logo img {
-      top: 50%;
-    }
-  } */
 </style>
