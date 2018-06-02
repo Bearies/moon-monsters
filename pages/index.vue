@@ -248,4 +248,50 @@
   .footer .email {
     color: #fe5b96;
   }
+
+  @media (max-width: 767px) {
+    .desc {
+      padding: 15% 0 8%;
+    }
+    .paragraph {
+      width: 80%;
+      line-height: 1.8em;
+    }
+    .text-row {
+      flex-wrap: wrap;
+    }
+    .monster {
+      flex: none;
+      width: 100%;
+    }
+    .text-row .text {
+      flex: none;
+      width: 100%;
+    }
+    .coming-soon .text {
+      padding-left: 0;
+    }
+    .monster-eggs,
+    .monster-tail {
+      position: static;
+    }
+    .coming-soon .monster {
+      width: 100%;
+      text-align: center;
+    }
+    .monster-eggs {
+      width: 50%;
+      max-width: 240px;
+    }
+    .monster-tail {
+      margin-top: 20px;
+      width: 80%;
+      min-width: 260px;
+      transform: translate(0, 0)scale(1);
+    }
+  }
+
+  @media (max-width: 767px) {
+    /*  */
+  }
 </style>
