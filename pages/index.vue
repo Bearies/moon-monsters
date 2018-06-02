@@ -251,11 +251,12 @@
 
   @media (max-width: 767px) {
     .desc {
-      padding: 15% 0 8%;
+      padding: 15% 0 4%;
     }
     .paragraph {
-      width: 80%;
+      width: 90%;
       line-height: 1.8em;
+      font-size: 3vw;
     }
     .text-row {
       flex-wrap: wrap;
