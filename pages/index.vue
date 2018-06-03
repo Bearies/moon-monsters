@@ -54,7 +54,7 @@
     </div>
 
     <footer class="footer">
-      <div class="email">hello@moonkidstudios.com</div>
+      <div class="email">moonkidstudios@gmail.com</div>
       <div class="name">Moon Kid Studios © 2018</div>
     </footer>©
 
