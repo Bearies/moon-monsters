@@ -13,6 +13,7 @@
     </div>
 
     <div class="coming-soon">
+      <div class="mobile-title mobile">XLAB</div>
       <div class="text-row">
         <div class="monster"><img class="monster-eggs" src="~/assets/images/eggs.png" alt="eggs"></div>
         <div class="text">
@@ -26,7 +27,9 @@
     </div>
 
     <div class="white-paper">
+      <div class="mobile-title mobile">MONSTER A WEEK</div>
       <div class="text-row">
+        <div class="monster mobile"><img class="monster-tail" src="~/assets/images/feature2_monster.png" alt="monster"></div>
         <div class="text">
           <div class="feature-title">Moon Monsters: Mobile</div>
           <p>Imagine waking up, on a moon in the middle of spacetime. You’re surrounded by monsters, and have no memory of exactly how you got there.</p>
@@ -105,10 +108,22 @@
     text-shadow: .1em .1em black;
     letter-spacing: .1em;
   }
-  .feature-title{
-    font-size: 2vw;
+
+  .feature-title {
+    font-size: 2em;
     margin-bottom: 15px;
   }
+  .mobile-title {
+    padding-top: 1.2em;
+    font-family: 'PT Mono', monospace;
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .coming-soon .mobile-title {
+    color: #fff;
+  }
+
   .paragraph {
     margin: 0 auto;
     width: 60%;
@@ -138,7 +153,6 @@
   }
   .text-row .text {
     position: relative;
-    /* font-family: 'Minecraft', sans-serif; */
     font-family: 'PT Mono', monospace;
     font-weight: 400;
     color: #fff;
@@ -162,6 +176,11 @@
     position: relative;
   }
 
+  .coming-soon .mobile,
+  .white-paper .mobile {
+    display: none;
+  }
+
   .monster-eggs {
     position: absolute;
     bottom: 10%;
@@ -173,7 +192,7 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    transform: translate(-30%, -20%)scale(1.6);
+    /* transform: translate(-30%, -20%)scale(1.6); */
   }
 
   .comingsoon-btn,
@@ -185,6 +204,7 @@
     letter-spacing: .1em;
     cursor: pointer;
     opacity: 0;
+    display: none;
   }
   .comingsoon-btn {
     background: #00f7ff;
@@ -205,7 +225,6 @@
     margin: 0 auto;
     width: 100%;
     max-width: 360px;
-    /* font-family: 'Minecraft', sans-serif; */
     font-family: 'PT Mono', monospace;
     letter-spacing: .1em;
     text-align: center;
@@ -222,7 +241,6 @@
     width: 90%;
     max-width: 400px;
     border: 1px solid #424242;
-    /* font-family: 'Minecraft', sans-serif; */
     font-family: 'PT Mono', monospace;
     font-size: .8em;
     letter-spacing: .1em;
@@ -236,7 +254,6 @@
     max-width: 300px;
     background: #fe5b96;
     border: 1px solid #fe5b96;
-    /* font-family: 'Minecraft', sans-serif; */
     font-family: 'PT Mono', monospace;
     font-size: .8em;
     letter-spacing: .2em;
@@ -250,7 +267,6 @@
 
   .footer {
     padding: 20px;
-    /* font-family: 'Minecraft', sans-serif; */
     font-family: 'PT Mono', monospace;
     font-size: .9em;
     letter-spacing: .1em;
@@ -271,11 +287,7 @@
 
   @media (max-width: 767px) {
     .desc {
-      padding: 15% 0 4%;
-    }
-    .feature-title{
-      font-size: 6vw;
-      margin-top: 20px;
+      padding: 15% 0 10%;
     }
     .paragraph {
       width: 90%;
@@ -284,10 +296,12 @@
     }
     .text-row {
       flex-wrap: wrap;
+      text-align: center;
     }
     .monster {
       flex: none;
       width: 100%;
+      text-align: center;
     }
     .text-row .text {
       flex: none;
@@ -312,7 +326,16 @@
       margin-top: 20px;
       width: 80%;
       min-width: 260px;
-      transform: translate(0, 0)scale(1);
+      /* transform: translate(0, 0)scale(1); */
+    }
+
+    .feature-title,
+    .white-paper .monster:not(.mobile) {
+      display: none;
+    }
+    .coming-soon .mobile,
+    .white-paper .mobile {
+      display: block;
     }
   }
 </style>
