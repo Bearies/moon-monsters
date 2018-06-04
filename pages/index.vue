@@ -6,6 +6,11 @@
         <img class="bk-image" src="~/assets/images/space-bk.png" alt="backgroung image">
         <img class="logo-text" src="~/assets/images/logo_moonkidstudios-2.png" alt="Moonkidstudios">
       </div>
+      <div class="page-logo mobile">
+        <img class="stars" src="~/assets/images/stars-mobile.png" alt="stars">
+        <img class="blue-planet" src="~/assets/images/moon-mobile.png" alt="blue planet">
+        <img class="logo-text" src="~/assets/images/moonkidstudios-logo-mobile.png" alt="Moonkidstudios">
+      </div>
     </div>
 
     <div class="desc">
@@ -65,24 +70,27 @@
 </template>
 
 <style scoped>
-
+  @import url('https://fonts.googleapis.com/css?family=PT+Mono');
+  /* font-family: 'PT Mono', monospace; */
 
   .moon-monsters {
     /* background: linear-gradient(90deg, #101b27, #434e5d); */
     background-color: #101b27;
   }
 
-  @import url('https://fonts.googleapis.com/css?family=PT+Mono');
-  font-family: 'PT Mono', monospace;
-
   .banner {
     text-align: center;
     width: 100vw;
   }
+
   .page-logo {
     position: relative;
     width: 100%;
+  } 
+  .page-logo.mobile {
+    display: none;
   }
+
   .bk-image {
     width: 100%;
   }
@@ -92,6 +100,17 @@
     left: 27%;
     width: 46%;
   }
+
+  .stars {
+    width: 80%;
+  }
+  .blue-planet {
+
+  }
+  .logo-text {
+
+  }
+
   .desc {
     padding: 12% 0;
     margin-top: -20%;
@@ -288,7 +307,15 @@
   @media (max-width: 767px) {
     .desc {
       padding: 15% 0 10%;
+      margin-top: 0;
     }
+
+    .logo-text {
+      top: 25%;
+      left: 10%;
+      width: 80%;
+    }
+
     .paragraph {
       width: 90%;
       line-height: 1.8em;
@@ -330,11 +357,13 @@
     }
 
     .feature-title,
-    .white-paper .monster:not(.mobile) {
+    .white-paper .monster:not(.mobile),
+    .page-logo:not(.mobile) {
       display: none;
     }
     .coming-soon .mobile,
-    .white-paper .mobile {
+    .white-paper .mobile,
+    .page-logo.mobile {
       display: block;
     }
   }
