@@ -20,7 +20,7 @@
           <p>Humans have discovered a far outpost of alien life.</p>
           <p>Around the Planet Zeta there are in orbit dozens of moons. The moons are inhabited by what appear to us as animal-like life forms. A nest of abandoned eggs has been procured to begin a study. Join the ranks of pioneering Xeno Anthropologists searching for the truth. Are these beings truly intelligent? Can we befriend and teach them? What will be learn?</p>
           <p>Raise a Moon Monster from egg to young adulthood and help record behavioral traits. Care for, Name, and build an environment you believe it will respond to. What do we have on our hands? What are the implications for the Human race?</p>
-          <!-- <button class="comingsoon-btn">COMING SOON!</button> -->
+          <button class="comingsoon-btn">COMING SOON!</button>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
           <p>Imagine waking up, on a moon in the middle of spacetime. You’re surrounded by monsters, and have no memory of exactly how you got there.</p>
           <p>Uncover the mystery and create your own story as a Moon Monster, an intelligent extra-planetary race. As you seek allies and family you build your skills and defenses to stand your ground and explore the new territories you find.</p>
           <p>Each week, venture out into the unknown to discover new secrets, obtain hidden treasures, and defeat a new monster, allowing you to unlock unique items, experiences, and earn MINED tokens.</p>
-          <!-- <button class="whitepaper-btn">READ THE WHITEPAPER</button> -->
+          <button class="whitepaper-btn">READ THE WHITEPAPER</button>
         </div>
         <div class="monster"><img class="monster-tail" src="~/assets/images/feature2_monster.png" alt="monster"></div>
       </div>
@@ -56,7 +56,7 @@
     <footer class="footer">
       <div class="email">moonkidstudios@gmail.com</div>
       <div class="name">Moon Kid Studios © 2018</div>
-    </footer>©
+    </footer>
 
   </div>
 </template>
@@ -184,6 +184,7 @@
     font-size: 1em;
     letter-spacing: .1em;
     cursor: pointer;
+    opacity: 0;
   }
   .comingsoon-btn {
     background: #00f7ff;
@@ -313,9 +314,5 @@
       min-width: 260px;
       transform: translate(0, 0)scale(1);
     }
-  }
-
-  @media (max-width: 767px) {
-    /*  */
   }
 </style>
